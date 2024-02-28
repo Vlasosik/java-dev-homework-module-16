@@ -2,7 +2,6 @@ plugins {
 	id 'java'
 	id 'org.springframework.boot' version '3.2.3'
 	id 'io.spring.dependency-management' version '1.1.4'
-	id 'org.flywaydb.flyway' version '8.1.0'
 }
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
@@ -35,9 +34,4 @@ dependencies {
 
 tasks.named('test') {
 	useJUnitPlatform()
-}
-flyway {
-	url = 'jdbc:h2:file:/Users/vlasik/lesson-16/DataBase'
-	user = 'sa'
-	password = 'sempai'
 }
